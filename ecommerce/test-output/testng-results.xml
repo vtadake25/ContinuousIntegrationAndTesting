@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-11T13:31:30Z" name="Default suite" finished-at="2023-10-11T13:31:34Z" duration-ms="3961">
+  <suite started-at="2023-10-12T19:51:54 IST" name="Amazon" finished-at="2023-10-12T19:51:58 IST" duration-ms="3885">
     <groups>
     </groups>
-    <test started-at="2023-10-11T13:31:30Z" name="Default test" finished-at="2023-10-11T13:31:34Z" duration-ms="3961">
-      <class name="com.ecommerce.base.TestBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.base.TestBase@1b8a29df]" started-at="2023-10-11T19:01:24Z" name="setUp" finished-at="2023-10-11T19:01:30Z" duration-ms="5239" status="PASS">
+    <test started-at="2023-10-12T19:51:54 IST" name="LoginTest" finished-at="2023-10-12T19:51:58 IST" duration-ms="3885">
+      <class name="com.ecommerce.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.testcases.LoginTest@c333c60]" started-at="2023-10-12T19:51:50 IST" name="setUp" finished-at="2023-10-12T19:51:54 IST" duration-ms="4252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecommerce.base.TestBase@1b8a29df]" started-at="2023-10-11T19:01:34Z" name="tearDown" finished-at="2023-10-11T19:01:35Z" duration-ms="1134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ecommerce.base.TestBase -->
-      <class name="com.ecommerce.testcases.LoginTest">
-        <test-method signature="Login()[pri:0, instance:com.ecommerce.testcases.LoginTest@4fbe37eb]" started-at="2023-10-11T19:01:30Z" name="Login" finished-at="2023-10-11T19:01:34Z" duration-ms="3946" status="PASS">
+        <test-method signature="Login()[pri:0, instance:com.ecommerce.testcases.LoginTest@c333c60]" started-at="2023-10-12T19:51:54 IST" name="Login" finished-at="2023-10-12T19:51:58 IST" duration-ms="3848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
       </class> <!-- com.ecommerce.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Amazon -->
 </testng-results>

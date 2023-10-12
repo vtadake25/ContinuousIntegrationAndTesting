@@ -84,7 +84,9 @@ public class TestBase {
 
 		if (config.getProperty("browser").equals("firefox")) {
 
-			 System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\src\\test\\resources\\executables\\geckodriver.exe");
+//			 System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\src\\test\\resources\\executables\\geckodriver.exe");
+			 System.setProperty("webdriver.gecko.driver",
+						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
 //			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 

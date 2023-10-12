@@ -13,8 +13,11 @@ public class ExtentManager {
 		
 		if(extent == null)
 		{
-			extent = new ExtentReports("C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\target\\report\\html\\extent.html",true, DisplayOrder.OLDEST_FIRST);
-			extent.loadConfig(new File("C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\src\\test\\resources\\extentconfig\\ReportsConfig.xml"));
+			
+//			extent = new ExtentReports("C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\target\\report\\html\\extent.html",true, DisplayOrder.OLDEST_FIRST);
+			extent = new ExtentReports(System.getProperty("user.dir") + "\\target\\report\\html\\extent.html",true, DisplayOrder.OLDEST_FIRST);
+			//extent.loadConfig(new File("C:\\Users\\Vanita\\eclipse-workspace\\ecommerce\\src\\test\\resources\\extentconfig\\ReportsConfig.xml"));
+			extent.loadConfig(new File(System.getProperty("user.dir") + "\\src\\test\\resources\\extentconfig\\ReportsConfig.xml"));
 		}
 		return extent;
 	}
