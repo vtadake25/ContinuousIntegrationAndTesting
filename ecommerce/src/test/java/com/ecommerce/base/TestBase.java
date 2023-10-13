@@ -38,6 +38,7 @@ public class TestBase {
 	@BeforeSuite
 	public void setUp()
 	{
+		//For testing doing modification
 		try {
 			fis = new FileInputStream(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");

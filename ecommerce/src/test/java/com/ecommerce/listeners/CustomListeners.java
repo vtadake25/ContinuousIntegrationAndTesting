@@ -29,7 +29,28 @@ public class CustomListeners implements ITestListener  ,ISuiteListener {
 	}
 
 	public void onFinish(ISuite suite) {
+		// TODO Auto-generated l̥ stub
 		// TODO Auto-generated method stub
+		MonitoringMail mail = new MonitoringMail();
+		 
+		try {
+			System.out.println("send mail");
+			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
+					+ ":8080/job/DataDrivenLiveProject/Extent_Reports/";
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		try {
+			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
+		} catch (AddressException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -70,26 +91,7 @@ public class CustomListeners implements ITestListener  ,ISuiteListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		MonitoringMail mail = new MonitoringMail();
-		 
-		try {
-			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/DataDrivenLiveProject/Extent_Reports/";
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	
-		try {
-			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
-		} catch (AddressException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 	}
 
