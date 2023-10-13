@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<extentreports>
+<?XML version="1.0" encoding="UTF-8"?>
+<ExtentReports>
     <configuration>
         <!-- report theme -->
         <!-- standard, dark -->
@@ -11,7 +11,7 @@
         
         <!-- protocol for script and stylesheets -->
         <!-- defaults to https -->
-        <protocol>https</protocol>
+        <protocol>HTTPS</protocol>
         
         <!-- title of the document -->
         <documentTitle>E-Commerce Automation Reports</documentTitle>
@@ -46,4 +46,4 @@
             ]]>
         </styles>
     </configuration>
-</extentreports>
+</ExtentReports>

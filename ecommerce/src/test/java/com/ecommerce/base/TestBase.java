@@ -17,8 +17,8 @@ import org.testng.annotations.BeforeSuite;
 
 import com.ecommerce.base.TestBase;
 import com.ecommerce.utilities.ExtentManager;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+//import com.relevantcodes.extentreports.ExtentReports;
+//import com.relevantcodes.extentreports.ExtentTest;
 
 
 public class TestBase {
@@ -31,8 +31,8 @@ public class TestBase {
 	public static Logger log = Logger.getLogger(TestBase.class);
 	public static String browser;
 	public static WebDriverWait wait;
-	public ExtentReports repo = ExtentManager.getInstance();
-	public static ExtentTest test;
+//	public ExtentReports repo = ExtentManager.getInstance();
+//	public static ExtentTest test;
 
 	
 	@BeforeSuite
